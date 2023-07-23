@@ -1,6 +1,10 @@
 # Tea-Leaf-Disease-Detection
 This repo contains the code and documentation for my final year project on tea leaf diseases using deep learning as a partial fulfillment of my degree of master in science in information technology from the department of computer science, Gauhati university, Ghy-14
 
+# !Important!
+The complete folders including `saved_models` are in master branch instead of main branch
+
+
 ## Dataset
 I used a publicly available dataset for tea leaf disease detection. The dataset is available in the `data` directory.
 

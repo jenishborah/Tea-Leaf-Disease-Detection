@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/nature.jpg') }}');">
+    <h1>Prediction</h1>
+    {% if accuracy and loss %}
+        <h3>Accuracy: {{ accuracy }}</h3>
+        <h3>Loss: {{ loss }}</h3>
+    {% endif %}
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <label for="image">Select Image:</label>
+        <input type="file" name="image" id="image" accept="image/*">
+        <br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

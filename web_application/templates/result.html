@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Comparison Result</title>
+    <style>
+        body {
+            background-color: #5DADE2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F2F3F4;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .result h2 {
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Model Comparison Result</h1>
+    <div class="result">
+        <h2>Accuracy Comparison</h2>
+        <p>Model 1 Accuracy: {{ accuracy_model1 }}</p>
+        <p>Model 2 Accuracy: {{ accuracy_model2 }}</p>
+    </div>
+    <div class="result">
+        <h2>Loss Comparison</h2>
+        <p>Model 1 Loss: {{ loss_model1 }}</p>
+        <p>Model 2 Loss: {{ loss_model2 }}</p>
+    </div>
+    <div class="result">
+        <h2>Prediction</h2>
+        <p>Prediction: {{ prediction }}</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* styles for index.html */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  select {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  /* styles for result.html */
+  .result-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  img.plot {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  

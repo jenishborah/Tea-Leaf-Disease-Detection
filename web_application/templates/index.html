@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Comparison</title>
+    <style>
+        body {
+            background-color: #5DADE2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F2F3F4;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #3498DB;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>Model Selection</title>
+
+</head>
+<body style="background-image: url('{{ url_for('static', filename='bg.jpg') }}');">
+    <h1>Model Selection</h1>
+    <form method="POST" action="/predict">
+        <label for="model">Select Model:</label>
+        <select name="model" id="model">
+            <option value="cnn">Custom Proposed CNN Model</option>
+            <option value="inception">Customized Inception V3</option>
+            <option value="vgg16">Customized VGG16</option>
+            <option value="nasnet">Customized NasNetMobile</option>
+        </select>
+
+        <br><br>
+
+        <label for="batch_size">Select Batch Size:</label>
+        <select name="batch_size" id="batch_size">
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="128">128</option>
+        </select>
+
+        <br><br>
+
+        <label for="epochs">Select Number of Epochs:</label>
+        <input type="number" name="epochs" id="epochs" min="1" max="100" value="10">
+
+        <br><br>
+
+        <input type="submit" value="Train and Predict">
+    </form>
+</body>
+</html>
+
+
